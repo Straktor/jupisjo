@@ -103,5 +103,19 @@ input[type="radio"] {
 }
 
 .circle-dashed.timeline.bg {
-    background: #ef7997
+    background: #ef7997;
+}
+
+.block-date-hero li:first-child {
+    background: #ef7997;
+    color: #ffffff;
+}
+
+.block-date-hero li:last-child {
+    background: #4d7ebd;
+    color: #ffffff;
+}
+
+.round-circle:before {
+    background: #385984;
 }
