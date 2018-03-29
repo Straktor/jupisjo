@@ -119,3 +119,11 @@ input[type="radio"] {
 .round-circle:before {
     background: #385984;
 }
+
+.circle-dashed.bg {
+    background: #ef7997;
+}
+
+.block-event.swap {
+    border-color: #ef7997;
+}
