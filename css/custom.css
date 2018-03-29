@@ -75,5 +75,33 @@ input[type="radio"] {
 }
 
 .block-event.swap.test {
-    overflow:auto;
+    overflow: auto;
+}
+
+.registry-form .submit {
+    background: #385984;
+}
+
+.round-circle.green {
+    background: #385984;
+}
+
+.circle-dashed.timeline.bg.green {
+    background: #4d7ebd;
+}
+
+.circle-dashed.relative.bg.green {
+    background: #4d7ebd;
+}
+
+.dashed-border {
+    stroke: none;
+}
+
+.round-circle {
+    background: #D15273;
+}
+
+.circle-dashed.timeline.bg {
+    background: #ef7997
 }
