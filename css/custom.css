@@ -127,3 +127,7 @@ input[type="radio"] {
 .block-event.swap {
     border-color: #ef7997;
 }
+
+.but .but-svg {
+    stroke: #000;
+}
