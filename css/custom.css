@@ -131,3 +131,24 @@ input[type="radio"] {
 .but .but-svg {
     stroke: #000;
 }
+
+.block-event.swap {
+    background: #ffffff;
+}
+
+.list-group-item {
+    padding-right: 0px;
+    padding-left: 0px;
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+.list-group-item.bg-grey {
+    font-weight: unset;
+}
+
+.list-group-item:first-child.bg-grey {
+    font-weight: bold;
+}

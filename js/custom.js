@@ -79,7 +79,9 @@ function ResetPresent() {
     document.getElementById('allergieNon').checked = false;
     document.getElementById('accompagneNon').checked = false;
     document.getElementById('hebergementNon').checked = false;
-
+    document.getElementById('brunchOui').checked = false;
+    document.getElementById('brunchNon').checked = false;
+    document.getElementById('selectPayment').selectedIndex = 0;
     document.getElementById('chanson').value = '';
 
     HebergementNon();
