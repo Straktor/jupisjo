@@ -1,27 +1,23 @@
 function PresentOui() {
     document.getElementById('reponsePresentNon').style.display = 'none';
     document.getElementById('reponsePresentOui').style.display = 'block';
-
     document.getElementById('allergieOui').required = true;
     document.getElementById('accompagneOui').required = true;
     document.getElementById('hebergementOui').required = true;
     document.getElementById('allergieNon').required = true;
     document.getElementById('accompagneNon').required = true;
     document.getElementById('hebergementNon').required = true;
-
 }
 
 function PresentNon() {
     document.getElementById('reponsePresentNon').style.display = 'block';
     document.getElementById('reponsePresentOui').style.display = 'none';
-
     document.getElementById('allergieOui').required = false;
     document.getElementById('accompagneOui').required = false;
     document.getElementById('hebergementOui').required = false;
     document.getElementById('allergieNon').required = false;
     document.getElementById('accompagneNon').required = false;
     document.getElementById('hebergementNon').required = false;
-
     ResetPresent();
 }
 
@@ -31,7 +27,6 @@ function AllergieOui() {
 
 function AllergieNon() {
     document.getElementById('reponseAllergie').style.display = 'none';
-
     ResetAllergie();
 }
 
@@ -45,11 +40,9 @@ function AccompagneOui() {
 
 function AccompagneNon() {
     document.getElementById('reponseAccompagne').style.display = 'none';
-
     document.getElementById('nomInvite').required = false;
     document.getElementById('allergieInviteOui').required = false;
     document.getElementById('allergieInviteNon').required = false;
-
     document.getElementById('reponseAllergieInvite').style.display = 'none';
     ResetAccompagne();
 }
@@ -82,8 +75,10 @@ function ResetPresent() {
     document.getElementById('brunchOui').checked = false;
     document.getElementById('brunchNon').checked = false;
     document.getElementById('selectPayment').selectedIndex = 0;
+    document.getElementById('paymentMoreValue').value = '';
+    document.getElementById('paymentMore').style.display = 'none';
+    document.getElementById('infosupp').value = '';
     document.getElementById('chanson').value = '';
-
     HebergementNon();
     AccompagneNon();
     AllergieNon();
@@ -97,7 +92,6 @@ function ResetAllergie() {
 function ResetAccompagne() {
     document.getElementById('allergieInviteOui').checked = false;
     document.getElementById('allergieInviteNon').checked = false;
-
     document.getElementById('nomInvite').value = '';
     AllergieInviteNon();
 }
@@ -110,6 +104,17 @@ function ResetAllergieInvite() {
 function ResetHebergement() {
     document.getElementById('selectHebergement').selectedIndex = 0;
 }
+
+$('#selectPayment').change(function() {
+    var index = document.getElementById('selectPayment').selectedIndex;
+
+    if (index === 3) {
+        document.getElementById('paymentMore').style.display = 'block';
+    } else {
+        document.getElementById('paymentMore').style.display = 'none';
+        document.getElementById('paymentMoreValue').value = '';
+    }
+});
 
 $("form").submit(function(event) {
     var recaptcha = $("#g-recaptcha-response").val();
