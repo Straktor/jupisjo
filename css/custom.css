@@ -160,3 +160,7 @@ input[type="radio"] {
 .background-img {
     max-height: 1000px;
 }
+
+section.hero.overlay {
+    max-height: 1000px;
+}
