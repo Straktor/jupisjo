@@ -156,3 +156,7 @@ input[type="radio"] {
 .list-group-item:first-child.bg-grey {
     font-weight: bold;
 }
+
+.background-img {
+    max-height: 1000px;
+}
